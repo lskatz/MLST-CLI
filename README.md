@@ -53,3 +53,11 @@ perl scripts/fasta-to-db.pl -o Salmonella_enterica.cgmlst.sqlite Salmonella_ente
 
 1. You need a spreadsheet of profiles whose columns are Name, allele1, allele2,...
 2. run `profilesToMsa.pl`
+
+### example alignment
+
+This uses an alignment in `t/data`
+
+```
+perl scripts/profilesToMsa.pl --profiles t/data/profiles.tsv --database Salmonella_enterica.cgmlst.sqlite
+```
